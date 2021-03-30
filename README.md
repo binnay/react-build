@@ -1,21 +1,37 @@
-* lone源码：git clone https://github.com/facebook/react.git
+# react 源码
 
-* 依赖安装：npm install or yarn
+### react-build
 
-* build源码：npm build react,react-dom,scheduler --type=NODE
+通过以下步骤可生成项目中的 react-build 文件夹
 
-### 为源码建立软链：
+-   lone 源码：git clone https://github.com/facebook/react.git
 
-```
-cd build/node_modules/react
-npm link
-cd build/node_modules/react-dom
-npm link
-```
+-   依赖安装：npm install or yarn
 
-### create-react-app创建项目
+-   build 源码：npm build react,react-dom,scheduler --type=NODE
+
+### demo
+
+通过一下步骤可生成项目中的 demo 文件夹
 
 ```
 npx create-react-app demo
+```
+
+### 为源码建立软链：
+
+创建 react-build 的软链
+
+```
+cd react-build/node_modules/react
+npm link
+cd react-build/node_modules/react-dom
+npm link
+```
+
+### 在 demo 在链接
+
+```
+cd demo
 npm link react react-dom
 ```
