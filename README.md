@@ -16,6 +16,7 @@
 
 ```
 npx create-react-app demo
+npm i
 ```
 
 ### 为源码建立软链：
