@@ -6,24 +6,32 @@ export default class App extends Component {
     };
 
     handleAdd = () => {
-        this.setState({
-            count: this.state.count + 1,
-        });
+        this.setState(
+            {
+                count: this.state.count + 1,
+            },
+            () => {
+                console.log(123);
+            }
+        );
     };
 
     render() {
         return (
             <div className="app-box">
-                <p>
-                    test-p
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                    </ul>
-                </p>
+                <p>test-p</p>
                 <span>{this.state.count}</span>
                 <div onClick={this.handleAdd}>add</div>
+                <ul>
+                    <li>
+                        <div>1</div>
+                        <div>
+                            1.1 <span>1.2</span>
+                        </div>
+                    </li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul>
             </div>
         );
     }
