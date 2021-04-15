@@ -8,7 +8,7 @@
 
 -   依赖安装：npm install or yarn
 
--   build 源码：npm build react,react-dom,scheduler --type=NODE
+-   build 源码：npm run build react,react-dom,scheduler --type=NODE
 
 ### demo
 
