@@ -20,18 +20,10 @@ export default class App extends Component {
         return (
             <div className="app-box">
                 <p>test-p</p>
-                <span>{this.state.count}</span>
-                <div onClick={this.handleAdd}>add</div>
-                <ul>
-                    <li>
-                        <div>1</div>
-                        <div>
-                            1.1 <span>1.2</span>
-                        </div>
-                    </li>
-                    <li>2</li>
-                    <li>3</li>
-                </ul>
+                <span title={`内容：${this.state.count}`}>
+                    {this.state.count}
+                </span>
+                <button onClick={this.handleAdd}>add</button>
             </div>
         );
     }
